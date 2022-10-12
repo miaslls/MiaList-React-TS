@@ -1,0 +1,99 @@
+/* ADOBE FONTS */
+@import url("https://use.typekit.net/ysj0rnq.css");
+
+/* BOOTSTRAP ICONS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+html * {
+  outline: none;
+  box-sizing: border-box;
+
+  /* border: 1px dashed #ccc; */
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  background: linear-gradient(120deg, #fff, #aaa);
+  font-family: letter-gothic-std, monospace;
+  font-weight: medium;
+  color: #000;
+}
+
+.clickable {
+  color: #17889b;
+  cursor: pointer;
+}
+
+.clickable:hover {
+  color: #000;
+}
+
+h1 {
+  font-size: 40pt;
+  font-weight: 400;
+}
+
+h1 span {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: x-large;
+  text-transform: uppercase;
+}
+
+/* 📌📌📌 PORTRAIT */
+
+@media screen and (orientation: portrait) {
+  body {
+    padding: 1rem;
+  }
+
+  .clickable:hover {
+    color: #17889b;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .filters {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .category-menu {
+    padding: 0.25rem 0.5rem;
+    gap: 0.25rem;
+    background: #17889b;
+    color: #fff;
+  }
+
+  .category-menu:hover {
+    color: #fff;
+  }
+
+  .list-grid-sizer,
+  .list-grid-item {
+    width: 100%;
+  }
+
+  .list-gutter-sizer {
+    width: 1%;
+  }
+
+  .star-icon:hover {
+    color: #17889b;
+  }
+
+  .checkbox-icon:hover {
+    color: #000;
+  }
+}
