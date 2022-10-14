@@ -1,6 +1,6 @@
-import "@styles/SignIn.css";
+import "@styles/Login.css";
 
-function SignIn() {
+function Login() {
   return (
     <>
       <div className="login-outer-container">
@@ -23,4 +23,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default Login;
