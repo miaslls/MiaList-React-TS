@@ -1,3 +1,6 @@
+TODO: authService
+TODO: authContext
+
 TODO: page 404 notFound
 
 TODO: documentation
@@ -6,4 +9,6 @@ TODO: documentation
 
 ## API
 
-TODO: deleteUser
+TODO: protect routes
+
+TODO: deleteUser ✔

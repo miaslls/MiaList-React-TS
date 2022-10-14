@@ -19,7 +19,10 @@
       "@/*": ["./src"],
       "@pages/*": ["./src/pages"],
       "@styles/*": ["./src/styles"],
-      "@components/*": ["./src/components"]
+      "@components/*": ["./src/components"],
+      "@services/*": ["./src/services"],
+      "@contexts/*": ["./src/contexts"],
+      "@interfaces/*": ["./src/interfaces"]
     }
   },
   "include": ["src"],
