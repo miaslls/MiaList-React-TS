@@ -5,5 +5,5 @@ interface IUser {
 
 export default interface IAuthorization {
   token: string;
-  user?: IUser;
+  user: IUser;
 }
