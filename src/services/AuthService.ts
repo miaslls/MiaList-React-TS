@@ -1,16 +1,20 @@
-import ICredential from "@interfaces/Credential";
-import IAuthorization from "@interfaces/Autorization";
+import ICredential from "../interfaces/Credential";
+import IAuthorization from "../interfaces/Authorization";
 
 type AuthResponse = IAuthorization | false;
 
+const parseResponse = (response: Response) => response.json();
+
 class AuthService {
   static async Authenticate(credential: ICredential): Promise<AuthResponse> {
-    const response = await fetch("https://mialog-api.herokuapp.com/auth", {
-      method: "POST",
-      body: JSON.stringify(credential),
-    });
-
-    const Authorization: AuthResponse = response.json;
+    const Authorization: IAuthorization = await fetch(
+      "https://mialog-api.herokuapp.com/auth",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(credential),
+      }
+    ).then(parseResponse);
 
     return Authorization;
   }

@@ -3,7 +3,9 @@ interface IUser {
   username: string;
 }
 
-export default interface IAuthorization {
+interface IAuthorization {
   token: string;
   user: IUser;
 }
+
+export default IAuthorization;
