@@ -14,16 +14,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "paths": {
-      "@/*": ["./src"],
-      "@pages/*": ["./src/pages"],
-      "@styles/*": ["./src/styles"],
-      "@components/*": ["./src/components"],
-      "@services/*": ["./src/services"],
-      "@contexts/*": ["./src/contexts"],
-      "@interfaces/*": ["./src/interfaces"]
-    }
+    "jsx": "react-jsx"
+    // "paths": {
+    //   "@/*": ["./src"],
+    //   "@pages/*": ["./src/pages"],
+    //   "@styles/*": ["./src/styles"],
+    //   "@components/*": ["./src/components"],
+    //   "@services/*": ["./src/services"],
+    //   "@contexts/*": ["./src/contexts"],
+    //   "@interfaces/*": ["./src/interfaces"]
+    // }
   },
   "include": ["src"],
   "references": [

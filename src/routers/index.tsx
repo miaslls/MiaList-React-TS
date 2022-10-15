@@ -1,7 +1,7 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 
-import App from "@/App";
-import Login from "@pages/Login";
+import App from "../App";
+import Login from "../pages/Login";
 
 const Router = createBrowserRouter([
   {
