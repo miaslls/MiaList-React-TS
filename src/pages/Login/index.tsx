@@ -1,14 +1,14 @@
-import "../styles/Login.css";
+import "./Login.css";
 
 import React from "react";
 import { useState, useContext } from "react";
 
-import { AuthContext } from "../contexts/AuthContext";
+import { AuthContext } from "../../contexts/AuthContext";
 
-import ICredential from "../interfaces/Credential";
-import IAuthorization from "../interfaces/Authorization";
+import ICredential from "../../interfaces/Credential";
+import IAuthorization from "../../interfaces/Authorization";
 
-import AuthService from "../services/AuthenticationService";
+import AuthService from "../../services/AuthenticationService";
 
 type AuthResponse = IAuthorization | false;
 
