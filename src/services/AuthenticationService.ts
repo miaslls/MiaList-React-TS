@@ -8,7 +8,7 @@ const parseResponse = (response: Response) => response.json();
 class AuthService {
   static async Authenticate(credential: ICredential): Promise<AuthResponse> {
     const Authorization: IAuthorization = await fetch(
-      "https://mialog-api.herokuapp.com/auth",
+      "https://mialist-api-express.onrender.com/login",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

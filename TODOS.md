@@ -2,17 +2,16 @@
 
 ---
 
-TODO: authContext
+TODO: login form validations
+
+TODO: authContext - set types
+
 TODO: page 404 notFound
+
+TODO: Loading
+
 TODO: documentation
 
 TODO: authService ✔
 
 ---
-
-## API
-
-TODO: protect routes
-TODO: remove swagger
-
-TODO: deleteUser ✔

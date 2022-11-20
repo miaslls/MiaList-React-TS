@@ -1,17 +1,22 @@
 import "../styles/Login.css";
 
 import React from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
+
+import { AuthContext } from "../contexts/AuthContext";
 
 import ICredential from "../interfaces/Credential";
 import IAuthorization from "../interfaces/Authorization";
-import AuthService from "../services/AuthService";
+
+import AuthService from "../services/AuthenticationService";
 
 type AuthResponse = IAuthorization | false;
 
 function Login() {
   const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
+
+  const { auth, setAuth } = useContext(AuthContext);
 
   const submitLoginForm = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -21,10 +26,9 @@ function Login() {
       password,
     };
 
-    const auth: AuthResponse = await AuthService.Authenticate(credential);
+    // const auth: AuthResponse = await AuthService.Authenticate(credential);
 
-    console.log(auth); // 🐞
-    alert(auth); // 🐞
+    setAuth(await AuthService.Authenticate(credential));
   };
 
   return (
